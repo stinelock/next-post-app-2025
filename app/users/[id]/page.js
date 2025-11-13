@@ -1,9 +1,9 @@
 import PostCard from "@/components/PostCard";
-import DeletePostButton from "@/components/DeletePostButton";
 import Link from "next/link";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import styles from "./page.module.css";
+import DeleteUserButton from "@/components/DeleteUserButton";
 
 export default async function UserPage({ params }) {
   const { id } = await params;
@@ -30,6 +30,12 @@ export default async function UserPage({ params }) {
           height="400"
         />
         <h1>{user.name}</h1>
+        <div className={styles.btnContainer}>
+          <DeleteUserButton />
+          <Link href={`/users/${id}/update`}>
+            <button className={styles.btnUpdate}>Update user</button>
+          </Link>
+        </div>
       </div>
       <section className={styles.userposts}>
         <h2>Posts by {user.name}</h2>

@@ -34,7 +34,7 @@
   margin-top: 40px;
 }
 
-.userposts h2{
+.userposts h2 {
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 24px;
@@ -52,4 +52,25 @@
   border-radius: 12px;
   margin-bottom: 24px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 12px;
+}
+
+.btnUpdate {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: var(--text-primary);
+  color: var(--background);
 }
