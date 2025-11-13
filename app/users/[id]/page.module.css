@@ -1,0 +1,55 @@
+.userPage {
+  min-height: 100vh;
+  padding: 80px 20px 40px;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.userimage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.userinfo h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.userposts {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.userposts h2{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.postgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.postCard {
+  background-color: var(--foreground);
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
